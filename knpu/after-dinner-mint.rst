@@ -259,7 +259,7 @@ to the public, except for the specific pages that we're locking down:
         # ...
         access_control:
             - { path: ^/new, roles: ROLE_EVENT_MANAGER }
-            - { path: ^/create , roles: ROLE_EVENT_MANAGER }
+            - { path: ^/create, roles: ROLE_EVENT_MANAGER }
 
 This is a blacklisting strategy. If the majority of our site required login,
 we could reverse. Add a new access control that matches *all* requests and
@@ -272,8 +272,8 @@ requires ``ROLE_USER``:
         # ...
         access_control:
             - { path: ^/new, roles: ROLE_EVENT_MANAGER }
-            - { path: ^/create , roles: ROLE_EVENT_MANAGER }
-            - { path: ^/create , roles: ROLE_USER }
+            - { path: ^/create, roles: ROLE_EVENT_MANAGER }
+            - { path: ^/, roles: ROLE_USER }
 
 Now, every page is locked down. Logout and try it. Mmm a redirect loop!
 
@@ -294,8 +294,8 @@ To fix this, add a new ``access_control`` entry for any page starting with
         access_control:
             - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/new, roles: ROLE_EVENT_MANAGER }
-            - { path: ^/create , roles: ROLE_EVENT_MANAGER }
-            - { path: ^/create , roles: ROLE_USER }
+            - { path: ^/create, roles: ROLE_EVENT_MANAGER }
+            - { path: ^/, roles: ROLE_USER }
 
 Refresh again. It works! We're missing our styles, but we'll fix that next.
 The ``access_control`` entries match from top to bottom and stop after the
@@ -326,7 +326,7 @@ blocking our stylesheets. With these entries in place, we're in good shape:
             - { path: ^/(css|js), roles: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/(_wdt|_profiler), roles: IS_AUTHENTICATED_ANONYMOUSLY }
             - { path: ^/new, roles: ROLE_EVENT_MANAGER }
-            - { path: ^/create , roles: ROLE_EVENT_MANAGER }
+            - { path: ^/create, roles: ROLE_EVENT_MANAGER }
             - { path: ^/, roles: ROLE_USER }
 
 Accessing the User in a Template
