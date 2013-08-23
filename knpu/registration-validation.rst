@@ -180,7 +180,7 @@ For the ``plainPassword``, we can use the ``NotBlank`` constraint and the
      * @Assert\NotBlank
      * @Assert\Regex(
      *      pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/",
-     *      message="Please use at least on upper case letter, one lower case letter, and one number"
+     *      message="Please use at least one upper case letter, one lower case letter, and one number"
      * )
      */
     private $plainPassword;
