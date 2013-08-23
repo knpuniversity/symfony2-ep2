@@ -387,7 +387,7 @@ Remember Me Functionality
 
 I want to leave you with just one more tip. We talked a bit about the remember
 me functionality, but we didn't actually see how to use it. Activate the
-feature by adding the `r`emember_me`` entry to your firewall and giving it
+feature by adding the ``remember_me`` entry to your firewall and giving it
 a secret, random key:
 
 .. code-block:: yaml
