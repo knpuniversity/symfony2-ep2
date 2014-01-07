@@ -205,7 +205,7 @@ encoded before being stored to the database::
     }
 
 Fortunately, Symfony gives us an object that can do this for us. To get the
-object, first implement :symfonyclass:`Symfony\\Component\\DependencyInjection\ContainerAwareInterface``::
+object, first implement :symfonyclass:`Symfony\\Component\\DependencyInjection\\ContainerAwareInterface`::
 
     // src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php
     // ...
