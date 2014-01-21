@@ -313,10 +313,10 @@ More about Container, the "doctrine" Service and the Entity Manager
 -------------------------------------------------------------------
 
 Quickly, let's talk about how we used the container at the top of the class.
-Remember from the :ref:`first episode in this series<symfony-ep1-what-is-a-service>`
-that the "container" in Symfony is basically just a big array filled with
-useful objects. To get a list of all of the objects in the container, run
-the ``container:debug`` console command:
+Remember from the `first episode in this series`_ that the "container" in
+Symfony is basically just a big array filled with useful objects. To get a
+list of all of the objects in the container, run the ``container:debug`` console
+command:
 
 .. code-block:: bash
 
@@ -356,3 +356,4 @@ access to the container, but we'll cover that later.
 
 .. _`PHPUnit site`: http://www.phpunit.de/manual/current/en/installation.html
 .. _`The DomCrawler Component`: http://bit.ly/sf2-crawler
+.. _`first episode in this series`: http://knpuniversity.com/screencast/symfony2-ep1/controller#symfony-ep1-what-is-a-service

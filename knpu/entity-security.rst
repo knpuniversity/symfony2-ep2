@@ -240,7 +240,7 @@ as a property::
 
 Because we implement this interface, Symfony will call this method and pass
 us the container object before calling ``load``. Remember that the container
-is the :ref:`array-like object that holds all the useful objects in the system<symfony-ep1-what-is-a-service>`.
+is the `array-like object that holds all the useful objects in the system`_.
 We can see a list of those object by running the ``container:debug`` console
 task:
 
@@ -606,3 +606,4 @@ story is this, we need to do this serialization trick to avoid some future
 problems. But once we add it, everything works perfectly.
 
 .. _`FOSUserBundle`: https://github.com/FriendsOfSymfony/FOSUserBundle/blob/20c2531805c40153112ecfdc65cddaf4a0f90f18/Model/User.php#L127
+.. _`array-like object that holds all the useful objects in the system`: http://knpuniversity.com/screencast/symfony2-ep1/controller#symfony-ep1-what-is-a-service
