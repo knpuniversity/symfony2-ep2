@@ -243,15 +243,16 @@ the ``use`` statement for the SecurityContext class that's referenced::
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
     use Symfony\Component\Security\Core\SecurityContext;
+    use Symfony\Component\HttpFoundation\Request;
+    // ...
 
     class LoginController extends Controller
     {
         /**
          * @Route("/login", name="login")
          */
-        public function loginAction()
+        public function loginAction(Request $request)
         {
-            $request = $this->getRequest();
             $session = $request->getSession();
 
             // get the login error if there is one
@@ -425,11 +426,11 @@ When we fail a login, the error is saved to the session. This is all visible in
 second part. The first part is not useful unless you reconfigure the login
 system to forward you to the login page::
 
-    // ...
     // src/Yoda/UserBundle/Controller/LoginController.php
-    public function loginAction()
+    // ...
+
+    public function loginAction(Request $request)
     {
-        $request = $this->getRequest();
         $session = $request->getSession();
 
         // get the login error if there is one
