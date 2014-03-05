@@ -319,7 +319,7 @@ Next, create the template file and copy in the code from the documentation.
 Add the extends and block tags to fit it into our base layout. I'll add a bit
 more markup to fit things into our site:
 
-.. code-block: html+jinja
+.. code-block:: html+jinja
 
     {# src/Yoda/UserBundle/Resources/views/Login/login.html.twig #}
     {% extends '::base.html.twig' %}
