@@ -424,7 +424,7 @@ second argument to ``form_row`` and passing in the ``label`` key:
         'label': 'Password'
     }) }}
 
-    {{ form_row(form.password.first, {
+    {{ form_row(form.password.second, {
         'label': 'Repeat Password'
     }) }}
 
@@ -858,3 +858,4 @@ can also be built right inside the controller or in an external class. Got
 it? Great! Let's move on to validation.
 
 .. _`repeated field type`: http://symfony.com/doc/current/reference/forms/types/repeated.html
+
