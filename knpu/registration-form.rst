@@ -750,7 +750,7 @@ Also don't forget to update the template:
         'label': 'Password'
     }) }}
 
-    {{ form_row(form.plainPassword.first, {
+    {{ form_row(form.plainPassword.second, {
         'label': 'Repeat Password'
     }) }}
 
