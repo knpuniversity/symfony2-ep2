@@ -358,7 +358,7 @@ single column. Update the ``getRoles`` method for the change and create a
 
     public function getRoles()
     {
-        return $roles;
+        return $this->roles;
     }
 
     public function setRoles(array $roles)
