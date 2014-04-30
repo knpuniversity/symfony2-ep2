@@ -834,6 +834,8 @@ And that's it! Remove the form code in our controller. We can replace it
 by calling ``createForm`` and passing it an instance of our new ``RegisterFormType``::
 
     // src/Yoda/UserBundle/Controller/RegisterController.php
+    
+    use Yoda\UserBundle\Form\RegisterFormType;
     // ...
 
     public function registerAction(Request $request)
