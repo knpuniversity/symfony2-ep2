@@ -562,7 +562,7 @@ redirect, use the ``redirect`` method and pass it the URL::
 
         $em->flush();
 
-        $url = $this->generate('event');
+        $url = $this->generateUrl('event');
 
         return $this->redirect($url);
     }
