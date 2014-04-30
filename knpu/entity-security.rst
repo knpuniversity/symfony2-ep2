@@ -294,7 +294,7 @@ Add a second admin user, which we'll give special access in a moment::
         // ...
         
         $admin = new User();
-        $admin->setUsername('user');
+        $admin->setUsername('admin');
         $admin->setPassword($this->encodePassword($admin, 'admin'));
         $manager->persist($admin);
 
