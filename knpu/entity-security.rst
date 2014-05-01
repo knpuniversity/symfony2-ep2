@@ -20,7 +20,8 @@ into the new ``UserBundle``.
 .. tip::
 
     For entity shortcut name, use ``UserBundle:User``. Also, choose "yes"
-    to generating the :ref:`repository class<symfony-ep2-repository-intro>`.
+    to generating the :ref:`repository class<symfony-ep2-repository-intro>`
+    and use ``annotations`` (the default value) as the format.
 
 For now, give it 3 fields:
 
