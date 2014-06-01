@@ -457,7 +457,7 @@ use the form's ``bind`` method::
             // do something in a moment...
         }
 
-        return array('form' => $form);
+        return array('form' => $form->createView());
     }
 
 .. tip::
