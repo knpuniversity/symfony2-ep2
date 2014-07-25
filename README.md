@@ -1,26 +1,13 @@
 Starting in Symfony2 - Episode 2
 ================================
 
-Well hallo there! Inside this archive, you'll find 3 things:
+Well hallo there! This repository has moved!
 
-1) start - This is the start version of the code that's used in this screencast.
-   NOTE: If you watched episode 1, this code is *slightly* different than
-   the code you finished with at the end of that episode. Specifically:
+https://github.com/knpuniversity/symfony2-series
 
-   * Styling was added to the site
-   * The stylesheets block was moved from layout.html.twig to base.html.twig
-   * The "/event" route prefix was removed so that the event listing page
-        is now the homepage.
+For the script, look in the [knpu/episode2](https://github.com/knpuniversity/symfony2-series/tree/master/knpu/episode2) directory.
 
-2) finish - This is the finished version of the code that we build
-   in this screencast. For more details on how to run the code,
-   see the README.md file in that directory.
+For the code, you can download it right on the site: https://knpuniversity.com/screencast/symfony2-ep2
 
-3) resources - This directory contains a few files that we will use
-   while building our project. For more details, see the README.md
-   file in that directory
+<3 Your friends at KnpUniversity
 
-And as always, thanks so much for your support and letting us do what
-we love!
-
-<3 Your friends at KnpLabs
